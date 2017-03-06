@@ -7,3 +7,5 @@ npm install
 tns platform add android
 # Run the app
 tns run android
+# Issues
+Login and register not implemented.. Because as the time of developement my phone died... So I will do that whenever i get new phone for testing. I don't  use emulator because my system is really slow. So working with emulator feel like working with 4004 Chipset device.
