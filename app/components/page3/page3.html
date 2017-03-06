@@ -1,0 +1,12 @@
+<StackLayout orientation="vertical" class="myStack list-group-item" >
+<ActionBar title="{{title}}" color="white">
+    <NavigationButton android.systemIcon = "ic_menu_back" (tap)="onBack()"></NavigationButton>
+</ActionBar>
+<Image src="~/images/mygif.gif" aspectFit="stretch"></Image> 
+<Label class="title text-uppercase font-weight-bold" text='{{dataTapped.name}}' textWrap="true"></Label>
+<ScrollView orientation="vertical">
+	<FlexboxLayout justifyContent="space-between" >
+		<Label class="body" text='{{dataTapped.body}}{{dataTapped.body}}{{dataTapped.body}}' textWrap="true"></Label>
+	</FlexboxLayout>
+</ScrollView>
+</StackLayout>

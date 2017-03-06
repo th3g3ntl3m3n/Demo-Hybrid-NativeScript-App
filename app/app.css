@@ -1,0 +1,15 @@
+@import "nativescript-theme-core/css/core.light.css";
+.loginPage {
+	background-color: #00968F;
+	color:white;
+}
+
+ActionBar {
+	background-color: #00968F;	
+}
+TextField {
+	padding: 10;
+	font-size: 16;
+	border-radius: 10;
+	background-color: rgba(122,122,122,0.4);
+}

@@ -1,0 +1,10 @@
+<!-- <ActionBar title="Page 1">
+    <ActionItem text="Next" ios.position="right" (tap)="onTap()"></ActionItem>
+</ActionBar> -->
+<StackLayout verticalAlignment="center">
+	<TextField hint="Email-Address" placeholder-color="white" keyboardType="email" [(ngModel)]="email"
+		autocorrect="false" autocapitalizationType="none"></TextField>
+	<TextField hint="Password" placeholderColor="white" secure="true" [(ngModel)]="password"></TextField>
+	<Button text="Sign In" class="submit-button btn-active" (tap)="onTap()" nsRouterLink="/page1"></Button>
+	<Button text="Sign Up" class="submit-button btn-active"></Button>
+</StackLayout>

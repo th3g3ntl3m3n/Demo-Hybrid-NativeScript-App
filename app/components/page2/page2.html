@@ -1,0 +1,12 @@
+<ActionBar title="Containers" color="white"></ActionBar>
+<StackLayout class="pageStack" orientation="vertical">
+	<ActivityIndicator [busy]="isVisible" [visibility]="isVisible ? 'visible' : 'collapsed'"></ActivityIndicator>
+	<ListView class="list-group" [class.visible]="listLoaded" [items]="comments" (itemTap)="onItemTap($event,item)">
+	    <template let-item="item" >
+	        <StackLayout class="myStack list-group-item" >
+	            <Label class="h2 list-group-item-heading text-uppercase font-weight-bold" text='{{item.name}}' textWrap="true"></Label>
+	            <Label class="h4 list-group-item-text" text='{{item.body}}' textWrap="true"></Label>
+	        </StackLayout>
+	    </template>
+	</ListView>
+</StackLayout>
